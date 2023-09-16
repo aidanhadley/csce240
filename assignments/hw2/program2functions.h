@@ -28,7 +28,7 @@ bool IsPalindrome(int);
 // If the second argument is not a non-negative one-digit integer, the
 // function will return -1.
 // For example, CountDigitMatch(57585, 57) will return -1
-int CountDigitMatch(int);
+int CountDigitMatch(int, int);
 
 // SameDigits takes two integer arguments. The function will return true if
 // the arguments are made up of exactly the same digits, and false otherwise.
