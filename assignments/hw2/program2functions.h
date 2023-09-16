@@ -47,7 +47,7 @@ bool SameDigits(int, int);
 // negative. For example, Factor(-484) will output "-484 = -2 * 2 * 11 * 11"
 // If the argument is prime, the function outputs that the argument is prime.
 // For example, Factor(13) will output "13 is prime"
-string Factor(int);
+void Factor(int);
 
 // DoubleMinToIntMinSec will take three arguments, a double for the value of a
 // minute quantity expressed as a real number, and two integer variables.
@@ -57,6 +57,6 @@ string Factor(int);
 // For example, after the function call DoubleMinToIntMinSec(3.75, min, sec);
 // the value of min will be 3, and the value of sec will be 45
 // (because 3.75 minutes is 3 minutes and 45 seconds)
-int DoubleMinToIntMinSec(double, string, string);
+void DoubleMinToIntMinSec(double, int, int);
 
 #endif
