@@ -57,6 +57,6 @@ void Factor(int);
 // For example, after the function call DoubleMinToIntMinSec(3.75, min, sec);
 // the value of min will be 3, and the value of sec will be 45
 // (because 3.75 minutes is 3 minutes and 45 seconds)
-void DoubleMinToIntMinSec(double, int, int);
+void DoubleMinToIntMinSec(double, int &min, int &sec);
 
 #endif
