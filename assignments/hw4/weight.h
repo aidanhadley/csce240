@@ -55,6 +55,7 @@ class Weight {
   // Please see testweight3.cc for additional examples
   
   // note: you are welcome to overload any other operators you would like
+  bool operator > (const Weight& right_operand) const;
  private:
   double value_;
   string units_;

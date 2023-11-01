@@ -97,3 +97,13 @@ double Weight::ConvertUnits(string new_units) {
   }
   return value_;
 }
+
+
+  bool Weight::operator > (const Weight& right) const {
+  if ( units_ == right.units_ )
+    return value_ > right.value_;
+  
+  Weight right_copy = right;
+  right_copy.ConvertUnits(units_);
+  return value_ > right_copy.value_;
+}

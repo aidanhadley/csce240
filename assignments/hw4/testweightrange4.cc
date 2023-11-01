@@ -19,7 +19,8 @@ int main() {
        range2.Width().GetUnits() == "pounds" )
     cout << "Passed Width test 2" << endl;
   else
-    cout << "Failed Width test 2" << endl;
+    cout << "Failed Width test 2" << endl
+      << "Width is " << range1.Width();
 
   WeightRange range3(Weight(1, "kilograms"), Weight(1062, "grams"));
   if ( range3.Width().GetValue() == 62 &&
