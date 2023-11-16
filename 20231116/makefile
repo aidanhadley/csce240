@@ -10,6 +10,19 @@
 # will find our user defined header files there
 flags = -std=c++17 -Wall -I .
 
+testdrive : testdrive.o employee.o salariedemployee.o hourlyemployee.o
+	g++ $(flags) $^ -o $@
+	./$@
+
+testdrive.o : testdrive.cc employee.h salariedemployee.h
+	g++ $(flags) -c $<
+
+salariedemployee.o : salariedemployee.cc salariedemployee.h employee.h
+	g++ $(flags) -c $<
+
+hourlyemployee.o : hourlyemployee.cc hourlyemployee.h employee.h
+	g++ $(flags) -c $<
+
 employee.o : employee.cc employee.h
 	g++ $(flags) -c $<
 
