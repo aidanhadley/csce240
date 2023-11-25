@@ -1,4 +1,6 @@
 #!/bin/bash
+# clear your terminal lol
+clear
 # run this in your . folder
 echo "*******************************************************************************"
 echo "testing TrueFalseQeustion class"

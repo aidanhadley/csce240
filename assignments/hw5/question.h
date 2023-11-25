@@ -1,4 +1,4 @@
-Copyright 2023 bhipp
+// Copyright 2023 bhipp
 // definition of the Question base class
 #ifndef _QUESTION_H_
 #define _QUESTION_H_
