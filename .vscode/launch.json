@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/aidan/Documents/school/csce/240/20231116",
-      "program": "/home/aidan/Documents/school/csce/240/20231116/build/Debug/outDebug",
+      "cwd": "/home/aidan/Documents/school/csce/240/assignments/hw5",
+      "program": "/home/aidan/Documents/school/csce/240/assignments/hw5/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
