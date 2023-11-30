@@ -11,7 +11,7 @@ using std::endl;
 namespace csce240_program5 {
   //  constructor method
   ShortAnswerQuestion::ShortAnswerQuestion(string question, string answer) :
-      Question(question), answer_(""){
+      Question(question), answer_("") {
     SetAnswer(answer);
 }
 //  mutator
@@ -21,7 +21,7 @@ void ShortAnswerQuestion::SetAnswer(string a) {
 //  print function
 void ShortAnswerQuestion::Print(bool sa) const {
   Question::Print();
-  if(sa) {
+  if (sa) {
     cout << "Correct Answer: " << answer_ << endl;
   }
 }
@@ -29,5 +29,4 @@ void ShortAnswerQuestion::Print(bool sa) const {
 ShortAnswerQuestion::~ShortAnswerQuestion() {
   //  Destructor code
 }
-
-}
+}  //  namespace csce240_program5

@@ -11,7 +11,7 @@ using std::endl;
 namespace csce240_program5 {
 
 //  constructor
-MultipleChoiceQuestion::MultipleChoiceQuestion(string q, int n, 
+MultipleChoiceQuestion::MultipleChoiceQuestion(string q, int n,
     string * a, bool * c) : Question(q), answerchoices_(0), answers_(nullptr),
     iscorrect_(nullptr) {
   SetAnswerChoices(n, a, c);
@@ -19,7 +19,7 @@ MultipleChoiceQuestion::MultipleChoiceQuestion(string q, int n,
 //  copy constructor
 MultipleChoiceQuestion::MultipleChoiceQuestion(const Question& q, int n,
     string * a, bool * c) : answerchoices_(0), answers_(nullptr),
-    iscorrect_(nullptr){
+    iscorrect_(nullptr) {
   SetAnswerChoices(n, a, c);
 }
 
@@ -27,7 +27,7 @@ void MultipleChoiceQuestion::SetAnswerChoices(int n, string * a, bool * c) {
   answerchoices_ = n;
   if (a) {
     answers_ = new string[answerchoices_];
-    for (int i = 0; i < answerchoices_; ++i){
+    for (int i = 0; i < answerchoices_; ++i) {
       answers_[i] = a[i];
     }
   }
@@ -62,10 +62,10 @@ MultipleChoiceQuestion::~MultipleChoiceQuestion() {
   answers_ = nullptr;
 }
 
-MultipleChoiceQuestion& MultipleChoiceQuestion::operator = (const 
-    MultipleChoiceQuestion& right) {
+MultipleChoiceQuestion& MultipleChoiceQuestion::operator = (
+    const MultipleChoiceQuestion& right) {
       SetQuestion(right.GetQuestion());
       SetAnswerChoices(right.answerchoices_, right.answers_, right.iscorrect_);
       return *this;
     }
-}
+}  //  namespace csce240_program5

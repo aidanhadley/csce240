@@ -22,12 +22,12 @@ class MultipleChoiceQuestion : public Question {
                                   bool * c = nullptr);
 
 // Create a copy constructor
-  explicit MultipleChoiceQuestion(const Question& q, int n = 0, 
+  explicit MultipleChoiceQuestion(const Question& q, int n = 0,
                   string * a = nullptr, bool * c = nullptr);
 // Overload the assignment operator
- MultipleChoiceQuestion& operator =(const MultipleChoiceQuestion& right);
+  MultipleChoiceQuestion& operator =(const MultipleChoiceQuestion& right);
 // Create a destructor that frees up all dynamically allocated memory
-~ MultipleChoiceQuestion();
+~MultipleChoiceQuestion();
 // Add a SetAnswerChoices function that sets the number of choices, the values
 // of the answer choices, and the answer correct/incorrect values. This function
 // will dynamically allocate and deallocate memory for the data members, as
@@ -45,6 +45,7 @@ class MultipleChoiceQuestion : public Question {
 // See testmc1.cc for example function calls and /output/correctmc1.txt for the
 // expected output for those function calls.
   void Print(bool sa = false) const;
+
  private:
 // The class should have a private integer data member that holds the number
 // of answer choices for the question. Add an accessor and mutator function
@@ -57,5 +58,5 @@ class MultipleChoiceQuestion : public Question {
 // each of the answer choices for the question is correct or not.
   bool * iscorrect_;
 };
-}
+}  //  namespace csce240_program5
 #endif
