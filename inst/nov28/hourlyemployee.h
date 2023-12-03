@@ -38,7 +38,6 @@ class HourlyEmployee : public Employee {
  private:
   double hourly_rate_;
   double hours_worked_;
-
   static double minimum_wage_;
 };
 

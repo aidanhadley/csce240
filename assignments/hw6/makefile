@@ -44,6 +44,10 @@ testRectangleTimesEquals : testRectangleTimesEquals.cc rectangle.o pixelshape.o
 checkit : checkit.cc
 	g++ $(flags) $^ -o $@
 
+testPrintMan : print.cc rectangle.o rightisosceles.o pixelshape.o
+	g++ $(flags) $^ -o $@
+	./testPrintMan
+
 testVirtualPrints : testVirtualPrints.cc rectangle.o rightisosceles.o pixelshape.o
 	g++ $(flags) $^ -o $@
 
